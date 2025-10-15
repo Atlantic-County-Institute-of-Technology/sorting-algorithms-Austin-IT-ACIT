@@ -1,11 +1,9 @@
-# import random
-#
-# numbers = [random.randint(1, 100) for i in range(10)]
-#
-# outer_pass = 0
-# inner_pass = 0
+# Austin Vaneman 10/14/25
 
-# print(numbers)
+# sorting action - swap
+# traversal - loop
+
+
 def bubblesort(numbers):
     for i in range(len(numbers)):
         # outer_pass += 1
