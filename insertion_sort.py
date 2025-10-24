@@ -1,9 +1,9 @@
-# Austin Vaneman 10/14/25
+# Austin Vaneman 10/15/25
 # import random
 # values = [random.randint(1, 100) for i in range(10)]
 
 
-def insertion(numbers):
+def insertion(numbers, shown):
     for i in range(1, len(numbers)):
         temp = numbers[i]
         j = i - 1
@@ -11,6 +11,8 @@ def insertion(numbers):
             numbers[j + 1] = numbers[j]
             j -= 1
             numbers[j + 1] = temp
+            if shown:
+                print(numbers)
     return numbers
 
 

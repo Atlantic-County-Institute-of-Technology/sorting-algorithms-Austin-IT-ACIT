@@ -4,13 +4,15 @@
 # traversal - loop
 
 
-def bubblesort(numbers):
+def bubblesort(numbers, shown):
     for i in range(len(numbers)):
         # outer_pass += 1
         for j in range(0, len(numbers) - i - 1):
             # inner_pass += 1
             if numbers[j] > numbers[j+1]:
                 numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
+                if shown:
+                    print(numbers)
     return numbers
 #
 # print(numbers)
