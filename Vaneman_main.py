@@ -23,7 +23,8 @@ numbers = []
 
 # main menu code
 def main():
-
+    global temp_numbers
+    global numbers
     # all variables for code
     selection_1 = 0
     selection_2 = 0
@@ -67,7 +68,8 @@ def main():
 
 # second menu code / sorting menu
 def sec_menu():
-
+    global temp_numbers
+    global numbers
     # all variables for code
     selection_1 = 0
     selection_2 = 0
@@ -94,7 +96,7 @@ def sec_menu():
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f"Unsorted List: {temp_numbers}")
         bubblesort(numbers, (False if shown == 0 else True))
-        print(numbers)
+        print(f"Sorted List: {numbers}")
         menu = int(input(" [-] Back to Main Menu (0) or Back to Sort Menu (1)"))
 
     # code for insertion sorting
@@ -102,7 +104,7 @@ def sec_menu():
         os.system('cls' if os.name == 'nt' else 'clear')
         print(temp_numbers)
         insertion(numbers, (False if shown == 0 else True))
-        print(numbers)
+        print(f"Sorted List: {numbers}")
         menu = int(input(" [-] Back to Main Menu (0) or Back to Sort Menu (1)"))
 
     # code for selection sorting
@@ -110,7 +112,7 @@ def sec_menu():
         os.system('cls' if os.name == 'nt' else 'clear')
         print(temp_numbers)
         selection(numbers, (False if shown == 0 else True))
-        print(numbers)
+        print(f"Sorted List: {numbers}")
         menu = int(input(" [-] Back to Main Menu (0) or Back to Sort Menu (1)"))
 
     # after each sort asked if wanting to go to main menu
