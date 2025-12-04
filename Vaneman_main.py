@@ -12,6 +12,15 @@ from selection_sort import selection
 
 from change_numbers import change
 
+# EVALUATION
+# 1: MENU CHOICES 5/5
+# 2: INPUT VALIDATION 4/5
+# 3: GENERATE VALUES 3/5
+# 4: BUBBLE SORT 5/5
+# 5: INSERTION SORT 5/5
+# 6: SELECTION SORT 5/5
+# 7: PERFORMANCE METRICS 1/5 - MISSING
+
 # start of the code / project
 print(input(" [-] welcome to my sorting numbers project \n [-] Press enter to begin"))
 os.system('cls' if os.name == 'nt' else 'clear')
